@@ -4,6 +4,7 @@ Java projects
 - Calculator
 - Black Jack
 - Space Patrol
+- currency converter
 
 Einige Konzepte fehlen in deiner Liste, die für Java essentiell sind:
 - Generics & Enums: Diese könnten entweder in ein eigenes Kapitel oder zu den Collections bzw. Object-Oriented.
