@@ -16,7 +16,7 @@ public class Hangman {
     public static void main(String[] args) throws Exception {
 
         System.out.println("Welcome to Hangman! You have 9 lives to guess the right word. Good Luck!");
-        File dictionary = new File("C:\\Development\\Java\\Hangman\\dictionary.txt");
+        File dictionary = new File("C:\\Users\\Nick\\OneDrive\\Dokumente\\Development\\KnowledgeVault\\Java\\9.Projects\\Hangman\\dictionary.txt");
 
         // Scanner zum Lesen der Datei und für die Benutzereingabe
         Scanner textScanner = new Scanner(dictionary);
