@@ -1,5 +1,5 @@
 Java projects
-- hangman
+- hangman (working on it)
 - Schere Stein Papier
 - Calculator
 - Black Jack
