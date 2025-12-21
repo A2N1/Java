@@ -1,6 +1,7 @@
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.io.InputStream;
 
 /**
  * Version: 1.0
@@ -16,10 +17,20 @@ public class Hangman {
     public static void main(String[] args) throws Exception {
 
         System.out.println("Welcome to Hangman! You have 9 lives to guess the right word. Good Luck!");
-        File dictionary = new File("C:\\Users\\Nick\\OneDrive\\Dokumente\\Development\\KnowledgeVault\\Java\\9.Projects\\Hangman\\dictionary.txt");
+        
+        // --- METHODE 2: Datei als Resource laden ---
+        // Dies sucht die Datei im "Classpath" (dort, wo die .class Dateien liegen)
+        InputStream inputStream = Hangman.class.getResourceAsStream("/dictionary.txt");
+        
+        if (inputStream == null) {
+            System.out.println("Error: dictionary.txt could not be found in resources!");
+            // Kleiner Tipp zur Fehlersuche:
+            System.out.println("Make sure dictionary.txt is in the same folder as your Java files.");
+            return;
+        }
 
         // Scanner zum Lesen der Datei und für die Benutzereingabe
-        Scanner textScanner = new Scanner(dictionary);
+        Scanner textScanner = new Scanner(inputStream);
         Scanner input = new Scanner(System.in);
 
         ArrayList<String> words = new ArrayList<>();
