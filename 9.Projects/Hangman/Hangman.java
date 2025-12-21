@@ -6,7 +6,7 @@ import java.io.InputStream;
 /**
  * Version: 1.0
  * Author: A2N1
- * Date: 2024-10-02
+ * Date: 2025-12-21
  * -----------------------------------------------------
  * Hangman is a word guessing game. The player has to guess the word by suggesting letters within a certain number of guesses.
  * The player has 9 lives to guess the word. If the player guesses the word within 9 lives, the player wins. If the player
