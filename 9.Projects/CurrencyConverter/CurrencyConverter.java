@@ -1,3 +1,7 @@
+// mit API https://www.exchangerate-api.com/
+// mit Referenzkursen der EZB https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+// momentan mit Beispielwerten
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
